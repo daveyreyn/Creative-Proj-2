@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+	text-align: center;
+	background-color: #fffff2;
+}
+
+h1 {
+	font-size: 3.4em;
+}
+
+.leading {
+  margin-bottom: 30px;
+  padding: 30px;
+  color: white;
+  background: url('/images/bg-2.jpg') center #333 no-repeat;
+  background-size: cover;
+  color: white;
+  text-shadow: 0px 0px 5px #000;
+}
+.leading-text {
+  max-width: 900px;
+	margin-right: 60px;
+  font-size:2.5em;
+  line-height: 1.4em;
+}
+
+a:link {
+  color: gainsboro;
+}
+
+/* visited link */
+a:visited {
+  color: gainsboro;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+}
+
+/* selected link */
+a:active {
+  color: black;
+}
+
+
+
+@media only screen and (max-width: 400px) {
+	.leading {
+	 display: flex;
+	 align-items: center;
+	 height: 240px;
+	}
+
+	.leading-text {
+		display: none
+	}
+	img {
+		height: auto;
+		width: 80%;
+	}
+	#recipeResults p {
+		font-size: 1em;
+		width: 300px;
+	}
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+	.leading {
+	 display: flex;
+	 align-items: center;
+	 height: 240px;
+	}
+
+	.leading-text {
+		display: none
+	}
+	img {
+		height: auto;
+		width: 80%;
+	}
+	#recipeResults p {
+		font-size: 1em;
+		width: 400px;
+	}
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+	.leading {
+	 display: flex;
+	 align-items: center;
+	 height: 550px;
+ }
+	.leading-text {
+		margin-bottom: 40px;
+	}
+	#recipeResults p {
+		font-size: 1em;
+		width: 600px;
+	}
+}
